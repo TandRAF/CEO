@@ -1,0 +1,26 @@
+$Breakpoints: (
+    "xs" = 270px,
+    "sm" = 900px,
+    "md" = 1500px,
+    "lg" = 1920px,
+);
+@mixin xs {
+    @media (min-width:map-get($Breakpoints, "xs")) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width:map-get($Breakpoints, "sm")) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width:map-get($Breakpoints, "md")) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width:map-get($Breakpoints, "lg")) {
+        @content;
+    }
+}
